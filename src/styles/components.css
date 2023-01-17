@@ -1,0 +1,110 @@
+.header {
+    display: block;
+    width: 100%;
+    background-color: #1e239c;
+    border-bottom: 10px solid #7598f8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.headerflex {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerlogo {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.headerimage {
+    --px: 50px;
+    min-height: var(--px);
+    height: var(--px);
+    min-width: var(--px);
+    width: var(--px);
+}
+.headertext {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.footer {
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+}
+.footerflex {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.footersplit {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 15px;
+}
+.footersplit a {
+    color: dodgerblue;
+    text-decoration: none;
+    transition: .2s;
+}
+.footersplit a:hover {
+    color: #1e239c;
+}
+.stickyfooter {
+    position: sticky;
+    bottom: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    user-select: none;
+}
+
+.container {
+    padding-inline: 30px;
+}
+
+.editor {
+    counter-reset: line;
+    border: 1px solid #ccc;
+    transition: .2s;
+    min-height: 400px;
+
+}
+.editor #codeArea {
+    outline: none;
+    padding-left: 80px !important;
+
+}
+.editor:has(#codeArea:focus) {
+    border-color: #2a52be;
+    box-shadow: 0 0 0 1px #2a52be;
+}
+
+.editor pre {
+    padding-left: 80px !important;
+}
+
+.editor .editorLineNumber {
+    position: absolute;
+    left: 0px;
+    color: #cccccc;
+    text-align: right;
+    padding-right: 10px;
+    width: 60px;
+    font-weight: 100;
+}
+.editor .editorLineNumber:nth-child(even) {
+    background-color: #f0f0f0;
+}
