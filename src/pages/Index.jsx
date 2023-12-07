@@ -24,6 +24,7 @@ function Index() {
     return (
         <DefaultLayout title={["Create Note"]}>
             <h1>{app.name} - {app.description}</h1>
+            <p>Use new <a className="anchor" href="https://devnote.devflikr.com?_refer=notes.myoasis.tech" target="_blank" rel="noopener noreferrer">DevNote</a> by DevFlikr.</p>
             <Textarea
                 placeholder="Enter your note contents here..."
                 onChange={setNote}
