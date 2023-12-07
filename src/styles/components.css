@@ -55,12 +55,14 @@
     font-weight: 500;
     gap: 15px;
 }
-.footersplit a {
+.footersplit a,
+.anchor {
     color: dodgerblue;
     text-decoration: none;
     transition: .2s;
 }
-.footersplit a:hover {
+.footersplit a:hover,
+.anchor:hover {
     color: #1e239c;
 }
 .stickyfooter {
